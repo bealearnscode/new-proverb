@@ -44,4 +44,7 @@ return 0;
 void writeProverb (int number) 
 { 
 // Fill in the body of the function to accomplish what is described above 
+if (number == 1) {
+    cout <
+}
 } 
