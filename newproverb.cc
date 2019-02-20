@@ -10,20 +10,18 @@
 using namespace std; 
 
 // Fill in the prototype of the function writeProverb. 
-void writeProverb(int);
+void writeProverb(string);
 
 int main () 
 { 
     
-    int wordCode; 
+    string wordCode; 
     
     cout << "Given the phrase:" << endl; 
     cout << "'Now is the time for all good men to come to the aid of their ___.' " 
          		<< endl; 
-    cout << "Input a 1 if you want the sentence to be finished with 'party'" 
+    cout << "Input the word you want to end the sentence." 
          		<< endl; 
-    cout << "Input 2 for the word 'country'" << endl; 
-    cout << "Please input your choice now" << endl; 
     cin >> wordCode; 
     cout << endl; 
     writeProverb(wordCode); 
@@ -43,19 +41,10 @@ int main ()
 // data out: no actual parameter altered 
 // 
 // ***************************************************************************** 
-void writeProverb (int number) 
+void writeProverb (string ending) 
 { 
     // Fill in the body of the function to accomplish what is described above 
-    if (number == 1) 
-    {
-        cout << "Now is the time for all good men to come to the aid of their party." << endl;
-    }
-    else if (number == 2)
-    {
-        cout << "Now is the time for all good men to come to the aid of their country." << endl;
-    }
-    else
-    {
-        cout << "I'm sorry, but that is an incorrect choice. Please input either 1 or 2." << endl;
-    }
+    cout << "Now is the time for all good men to come to the aid of their " 
+         << ending << "." << endl;
+   
 } 
