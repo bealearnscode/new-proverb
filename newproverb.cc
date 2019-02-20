@@ -22,7 +22,7 @@ int main ()
          		<< endl; 
     cout << "Input a 1 if you want the sentence to be finished with 'party'" 
          		<< endl; 
-    cout << "Input any other number for the word 'country'" << endl; 
+    cout << "Input 2 for the word 'country'" << endl; 
     cout << "Please input your choice now" << endl; 
     cin >> wordCode; 
     cout << endl; 
@@ -50,8 +50,12 @@ void writeProverb (int number)
     {
         cout << "Now is the time for all good men to come to the aid of their party." << endl;
     }
-    else 
+    else if (number == 2)
     {
         cout << "Now is the time for all good men to come to the aid of their country." << endl;
+    }
+    else
+    {
+        cout << "I'm sorry, but that is an incorrect choice. Please input either 1 or 2." << endl;
     }
 } 
